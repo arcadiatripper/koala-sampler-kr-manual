@@ -1,0 +1,21 @@
+---
+layout: base
+---
+
+<article class="post documentation-single-article">
+  <div class="documentation-single-article-header">
+    <div>
+      <h1 class="post-title">{{ page.order }}. {{ page.title | escape }}</h1>
+    </div>
+    <div>
+      <a href="/koala-sampler-kr-manual/{{ page.collection }}#documentation-items">
+        &laquo; 목차
+      </a>
+    </div>
+  </div>
+  <div class="documentation-content post-content">
+    {{ page.description }} {{ content }} {%- include documentation/body.html -%}
+  </div>
+</article>
+
+{%- include documentation/pagination.html -%}

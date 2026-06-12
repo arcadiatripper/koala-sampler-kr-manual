@@ -1,0 +1,60 @@
+<div class="row">
+  {% assign chapters = site[page.collection] | sort: "path" %}
+  {% assign current_chapter_group = "" %}
+
+  {% for chapter_part in chapters %}
+  {% assign documentation_url = chapter_part.path | split: '/' | reverse %}
+  {% assign chapter_url = chapter_part.path | split: '/' %}
+  {% assign chapter_number = chapter_url[2] | split: '-' %}
+  {% assign chapter_number_order = chapter_number[0] | plus: 0 %}
+
+  {% assign chapter_column_class = '' %}
+
+  {% if page.collection == 'tablet' %}
+  {% assign chapter_column_class = 'col-xl-4' %}
+  {% endif %}
+
+  {% if page.collection == 'mobile' %}
+  {% assign chapter_column_class = 'col-lg-4 col-xl-4' %}
+  {% endif %}
+
+  {% if chapter_part.path contains 'chapters' %}
+
+  {% assign chapter_name = documentation_url[0]; %}
+
+  {% if chapter_number_order == page.order %}
+
+  {% if chapter_name contains 'title' %}
+
+  <div class="w-100"></div>
+  <div class="col-md-6">
+
+    {{ chapter_part.content | liquify | markdownify | replace: 'href="/assets/', 'href="/koala-sampler-kr-manual/assets/' | replace: 'src="/assets/', 'src="/koala-sampler-kr-manual/assets/' }}
+
+  </div>
+  <div class="w-100"></div>
+
+  {% else %}
+
+  {% if current_chapter_group != documentation_url[1] %}
+
+  <div class="w-100"></div>
+
+  {% endif %}
+
+  <div class="col-md-6 {{ chapter_column_class }} mb-40 ">
+
+    {{ chapter_part.content | liquify | markdownify | replace: 'href="/assets/', 'href="/koala-sampler-kr-manual/assets/' | replace: 'src="/assets/', 'src="/koala-sampler-kr-manual/assets/' }}
+
+  </div>
+
+  {% assign current_chapter_group = documentation_url[1] %}
+
+  {% endif %}
+
+  {% endif %}
+
+  {% endif %}
+
+  {% endfor %}
+</div>

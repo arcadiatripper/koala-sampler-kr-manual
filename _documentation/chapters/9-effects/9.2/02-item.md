@@ -1,0 +1,9 @@
+---
+---
+{% flexible_image link="effect-bandpass.png" alt="Bandpass effect" %}
+
+### BANDPASS
+Band pass filter입니다.
+
+* FREQ: 50-20.0 Hz
+* WIDTH: 0.50-20

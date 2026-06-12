@@ -1,0 +1,64 @@
+url: "https://arcadiatripper.github.io"
+baseurl: "/koala-sampler-kr-manual"
+lang: ko-KR
+title: KOALA SAMPLER MANUAL - 비공식 한국어 번역 초안
+author:
+  name: Nikolai Sokolov
+  layout: Alex Aleksandrov
+  coding: Stas Pyshevski
+  url: https://metawork.studio
+  email: hello@metawork.studio
+
+# The `>` after `description:` means to ignore line-breaks until next key.
+# If you want to omit the line-break after the end of text, use `>-` instead.
+description: >
+  Koala Sampler 공식 매뉴얼을 바탕으로 만든 비공식 한국어 번역 초안입니다.
+  최신 정보와 공식 안내는 반드시 Koala Sampler 공식 매뉴얼을 확인하세요.
+
+# Build settings
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+
+# Theme-specific settings
+minima:
+# Minima date format.
+# Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
+#
+# date_format: "%b %-d, %Y"
+
+# Generate social links in footer.
+
+  social_links:
+    - { platform: instagram,      user_url: "https://www.instagram.com/koalasampler" }
+    - { platform: twitter,        user_url: "https://twitter.com/koalasampler" }
+    - { platform: youtube,        user_url: "https://www.youtube.com/c/elfaudio" }
+    - { platform: facebook,       user_url: "https://www.facebook.com/groups/koalasampler" }
+    - { platform: reddit,         user_url: "https://www.reddit.com/r/koalasampler" }
+    - { platform: discord,        user_url: "https://discord.gg/7vz3rH5" }
+    - { platform: twitch,         user_url: "https://www.twitch.tv/koalabeatcast" }
+collections:
+  documentation:
+    output: false
+  #    permalink: /:collection/:path/
+
+  mobile:
+    output: true
+  #    permalink: /:collection/:path/
+  tablet:
+    output: true
+#    permalink: /:collection/:path/
+
+permalink: pretty
+
+exclude:
+  - .bundle
+  - .jekyll-cache
+  - .jekyll-metadata
+  - .sass-cache
+  - _site
+  - Gemfile.lock
+  - vendor
+  - "*.zip"
