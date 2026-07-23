@@ -1,0 +1,46 @@
+---
+layout: v2-base
+body_class: guide-site guide-site--article
+---
+
+<div class="guide-frame">
+  {% include v2/sidebar.html %}
+  <main id="main-content" class="guide-main">
+    <article class="guide-article">
+      <header class="article-header">
+        <div class="article-header__meta">
+          {% if page.ui_label %}<span class="ui-label">{{ page.ui_label }}</span>{% endif %}
+          {% if page.reading_time %}<span>{{ page.reading_time }}</span>{% endif %}
+          {% if page.level %}<span>{{ page.level }}</span>{% endif %}
+        </div>
+        <h1>{{ page.title }}</h1>
+        {% if page.summary %}<p class="article-summary">{{ page.summary }}</p>{% endif %}
+      </header>
+
+      {% if page.source_chapters %}
+        {% include v2/device-switcher.html %}
+      {% endif %}
+
+      <div class="article-body">
+        {{ content }}
+      </div>
+
+      {% if page.verified_date or page.official_source %}
+      <aside class="source-note">
+        <strong>내용 확인 정보</strong>
+        {% if page.verified_date %}<span>마지막 확인: {{ page.verified_date }}</span>{% endif %}
+        {% if page.official_source %}<a href="{{ page.official_source }}">공식 원문 보기</a>{% endif %}
+      </aside>
+      {% endif %}
+
+      <nav class="article-pagination" aria-label="이전 및 다음 가이드">
+        {% if page.previous_url %}
+          <a href="{{ page.previous_url | relative_url }}"><span>← 이전</span><strong>{{ page.previous_title }}</strong></a>
+        {% else %}<span></span>{% endif %}
+        {% if page.next_url %}
+          <a class="article-pagination__next" href="{{ page.next_url | relative_url }}"><span>다음 →</span><strong>{{ page.next_title }}</strong></a>
+        {% endif %}
+      </nav>
+    </article>
+  </main>
+</div>

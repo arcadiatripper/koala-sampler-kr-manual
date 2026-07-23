@@ -3,4 +3,4 @@
 
 {% flexible_image link="sample-autochop-transients.png" alt="Autochop transients mode" %}
 
-TRANSIENTS는 샘플 안의 transient를 기준으로 자동 chop합니다. 짧은 샘플이나 drum break에 유용합니다. 찹 마디 안에서 swipe하면 찹 개수를 줄이거나 늘릴 수 있습니다. 현재 찹 개수에 비해 빈 패드가 부족하면 찹 bar가 빨간색으로 바뀝니다.
+`TRANSIENTS`는 소리가 강하게 시작되는 지점을 찾아 자동으로 자릅니다. 짧은 샘플이나 드럼 브레이크에 유용합니다. 개수 표시를 좌우로 움직여 조각 수를 조절할 수 있습니다. 빈 패드가 부족하면 표시가 빨간색으로 바뀝니다.

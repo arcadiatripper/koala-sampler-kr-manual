@@ -3,4 +3,4 @@
 
 {% flexible_image link="perform-live-fx-stepped.png" alt="Stepped FX" %}
 
-이펙트 section의 signal path는 왼쪽 위에서 오른쪽 아래 방향입니다. 템포 고정 이펙트는 여러 가로 구간으로 나뉩니다. 각 구간은 템포 division에 고정됩니다. STUTTER와 CUTTER는 템포 고정 effect입니다.
+소리는 이펙트 영역의 왼쪽 위에서 오른쪽 아래 순서로 처리됩니다. 템포에 맞춰 움직이는 이펙트는 가로 위치에 따라 반복 간격이 달라집니다. `STUTTER`와 `CUTTER`가 대표적인 예입니다.

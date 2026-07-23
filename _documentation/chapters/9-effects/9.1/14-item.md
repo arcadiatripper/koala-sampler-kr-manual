@@ -1,4 +1,4 @@
 ---
 ---
 ### VIBROFLANGE
-flanger / wobble effect입니다. 가운데 위쪽으로 slide하면 flanger, 가운데 아래쪽으로 slide하면 wobble 이펙트가 적용됩니다.
+플랜저와 흔들림 효과를 함께 제공합니다. 가운데에서 위로 움직이면 플랜저, 아래로 움직이면 피치가 흔들리는 효과가 적용됩니다.

@@ -3,21 +3,21 @@
 
 {% flexible_image link="sequence-keygrid-scales-menu.png" alt="Scale dropdown" %}
 
-GRID 모드는 사용 가능한 스케일 중 하나에 고정된 note를 보여 줍니다.
+`GRID` 모드는 선택한 스케일에 포함된 노트만 보여 줍니다.
 
-* CHROMATIC: octave마다 12개 note를 모두 사용할 수 있습니다.
-* PENTATONIC: octave마다 5개 노트
-* MAJOR: octave마다 major scale의 7개 노트
-* MINOR: octave마다 minor scale의 7개 노트
-* WHOLE TONE: octave마다 6개 노트
-* DIMINISHED: octave마다 8개 노트
-* HEXATONIC: octave마다 6개 노트
-* JAPANESE: octave마다 5개 노트
-* PELOG: octave마다 5개 노트
-* YING ZHONG: octave마다 5개 노트
+* CHROMATIC: 옥타브마다 12개 노트를 모두 사용합니다.
+* PENTATONIC: 옥타브마다 5개 노트를 사용합니다.
+* MAJOR: 옥타브마다 메이저 스케일의 7개 노트를 사용합니다.
+* MINOR: 옥타브마다 마이너 스케일의 7개 노트를 사용합니다.
+* WHOLE TONE: 옥타브마다 6개 노트를 사용합니다.
+* DIMINISHED: 옥타브마다 8개 노트를 사용합니다.
+* HEXATONIC: 옥타브마다 6개 노트를 사용합니다.
+* JAPANESE: 옥타브마다 5개 노트를 사용합니다.
+* PELOG: 옥타브마다 5개 노트를 사용합니다.
+* YING ZHONG: 옥타브마다 5개 노트를 사용합니다.
 
-selector를 사용해 scale을 바꿉니다.
+선택 메뉴에서 스케일을 바꿀 수 있습니다.
 
-참고: 여러 영역을 탭하면 최대 5 voice의 chord를 연주할 수 있습니다.
+참고: 여러 영역을 함께 누르면 최대 5음으로 이루어진 코드를 연주할 수 있습니다.
 
-팁: chord를 pad에 resample한 뒤, 그 패드를 다시 그리드 keyboard mode에서 사용하면 항상 스케일 안에 들어오는 chord를 연주할 수 있습니다.
+팁: 코드를 패드에 리샘플한 뒤 그 패드를 그리드 키보드 모드로 연주하면, 선택한 스케일에 어울리는 코드를 쉽게 반복해서 사용할 수 있습니다.

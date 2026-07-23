@@ -9,4 +9,4 @@ anchor: 51-sequencer-controls
 
 {% flexible_image link="sequence-idle.png" alt="Sequence screen" %}
 
-곡이 재생되는 동안 다른 slot을 탭하면 연주 중에도 시퀀스를 전환할 수 있습니다. 길이가 다른 시퀀스를 서로 다른 위치에서 전환하면 흥미로운 transition을 만들 수 있습니다.
+곡이 재생되는 동안 다른 슬롯을 탭하면 연주를 멈추지 않고 시퀀스를 전환할 수 있습니다. 길이가 다른 시퀀스의 전환 시점을 바꾸면 다양한 리듬 변화를 만들 수 있습니다.

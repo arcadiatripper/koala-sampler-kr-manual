@@ -1,0 +1,6 @@
+{% assign root_docs = site.documentation | where: "order", include.order %}
+{% for root_doc in root_docs %}
+  {% unless root_doc.path contains "chapters" %}
+{{ root_doc.content | markdownify | v2_normalize_guide }}
+  {% endunless %}
+{% endfor %}

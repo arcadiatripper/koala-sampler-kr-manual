@@ -9,6 +9,13 @@ author:
   url: https://metawork.studio
   email: hello@metawork.studio
 
+guide_creator:
+  name: "레네 RENÉ"
+  role: "한국어 번역·가이드 제작"
+  youtube: "https://www.youtube.com/@arcadiatripper"
+  instagram: "https://www.instagram.com/arcadiatripper/"
+  profile_image: "/assets/images/rene-profile.png"
+
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
@@ -50,6 +57,16 @@ collections:
   tablet:
     output: true
 #    permalink: /:collection/:path/
+  guide:
+    output: true
+    permalink: /guide/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: guide
+    values:
+      layout: v2-guide
 
 permalink: pretty
 

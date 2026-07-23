@@ -1,0 +1,53 @@
+- label: 시작하기
+  items:
+    - title: 가이드 홈
+      label: HOME
+      url: /
+    - title: 10분 Quick Start
+      label: START HERE
+      url: /guide/quick-start/
+    - title: 네 화면의 역할
+      label: OVERVIEW
+      url: /guide/overview/
+    - title: 기능 검색
+      label: SEARCH
+      url: /guide/search/
+- label: 화면별 가이드
+  items:
+    - title: 소리 넣고 다듬기
+      label: SAMPLE
+      url: /guide/sample/
+    - title: 리듬 기록하고 편집하기
+      label: SEQUENCE
+      url: /guide/sequence/
+    - title: 이펙트로 연주하기
+      label: PERFORM
+      url: /guide/perform/
+- label: 관리와 설정
+  items:
+    - title: 저장·불러오기·내보내기
+      label: MENU
+      url: /guide/menu/
+    - title: 앱 동작 바꾸기
+      label: SETTINGS
+      url: /guide/settings/
+    - title: 이펙트 찾아보기
+      label: FX
+      url: /guide/effects/
+- label: 확장과 참고
+  items:
+    - title: 유료 확장 기능
+      label: ADD-ONS
+      url: /guide/purchases/
+    - title: iOS 플러그인 사용
+      label: AUV3
+      url: /guide/auv3/
+    - title: 사양과 지원 범위
+      label: SPECS
+      url: /guide/specifications/
+    - title: 처음 보는 단어 찾기
+      label: GLOSSARY
+      url: /guide/glossary/
+    - title: 전체 기능 목록
+      label: REFERENCE
+      url: /guide/reference/

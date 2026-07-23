@@ -5,7 +5,7 @@ anchor: 48-mix-and-eq
 
 <a id="48-mix-and-eq"></a>
 
-## 4.8. mix와 EQ (Mix and EQ)
+## 4.8. 믹스와 EQ (Mix and EQ)
 
 > 📘 용어 설명:
 > **믹스(mix)** — 여러 소리의 볼륨과 톤이 잘 어울리게 정리하는 작업입니다.  

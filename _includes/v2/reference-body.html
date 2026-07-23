@@ -1,0 +1,27 @@
+{% assign source_docs = site.documentation | sort: "path" %}
+{% if include.collapsible %}
+<details class="full-reference">
+  <summary>
+    <span>{{ include.summary | default: "전체 기능 설명 펼쳐보기" }}</span>
+    <small>기능 이름이나 세부 설정을 찾을 때 열어보세요.</small>
+  </summary>
+  <div class="full-reference__body">
+{% endif %}
+
+<div class="reference-body">
+  {% for source_chapter in include.chapters %}
+    {% capture chapter_fragment %}chapters/{{ source_chapter }}/{% endcapture %}
+    {% for chapter_part in source_docs %}
+      {% if chapter_part.path contains chapter_fragment %}
+        <section class="reference-part">
+          {{ chapter_part.content | liquify | markdownify | v2_normalize_guide }}
+        </section>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+</div>
+
+{% if include.collapsible %}
+  </div>
+</details>
+{% endif %}

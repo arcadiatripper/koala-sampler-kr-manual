@@ -3,7 +3,7 @@
 {% flexible_image link="background-fx-huey.png" alt="Background FX Huey" %}
 
 ### HUEY
-background를 빨강, 초록, 파랑 hue로 나누고 overlay를 이동시킵니다.
+배경의 빨강, 초록, 파랑 색상 레이어를 분리해 서로 어긋나게 만듭니다.
 
-* RGB: layer가 shift되는 양을 바꿉니다.
-* SPEED: shifting speed를 바꿉니다.
+* RGB: 각 색상 레이어가 어긋나는 정도를 바꿉니다.
+* SPEED: 색상 레이어가 움직이는 속도를 바꿉니다.

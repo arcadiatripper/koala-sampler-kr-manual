@@ -1,8 +1,8 @@
 ---
 ---
 
-CURRENT SEQUENCE와 ALL SEQUENCES는 스템 또는 mixed로 export할 수 있습니다. stems는 시퀀스 길이에 맞춰 pad마다 WAV 파일을 만듭니다. mixed는 전체 시퀀스를 하나의 스테레오 WAV 파일로 mixdown합니다.
+`CURRENT SEQUENCE`와 `ALL SEQUENCES`는 스템 또는 하나로 합친 파일로 내보낼 수 있습니다. 스템은 패드마다 별도의 WAV 파일을 만들고, 믹스 파일은 현재 들리는 전체 결과를 하나의 스테레오 WAV로 만듭니다.
 
 > 💡 초보자 주석:
-> stems로 내보내면 kick, snare, 샘플 pad처럼 각 패드 소리를 따로 받을 수 있어 DAW에서 믹싱하기 좋습니다. mixed는 지금 들리는 결과를 하나의 파일로 받는 방식입니다.
+> 스템으로 내보내면 킥, 스네어와 다른 패드 소리를 각각 받아 DAW에서 따로 믹싱할 수 있습니다. 믹스 파일은 지금 들리는 결과를 그대로 하나의 파일에 담습니다.
 {: .beginner-note}

@@ -1,0 +1,26 @@
+---
+layout: v2-base
+body_class: guide-site guide-site--home
+---
+
+<main id="main-content">
+  <section class="home-hero">
+    <div class="home-hero__copy">
+      <p class="eyebrow">UNOFFICIAL KOREAN GUIDE</p>
+      <h1><span class="brand-word">KOALA SAMPLER</span><br>처음 만나는 사람을 위한 가이드</h1>
+      <p class="home-hero__lead">앱에 적힌 영어는 그대로 익히고, 만드는 과정은 쉬운 한국어로 따라가세요.</p>
+      <div class="home-hero__actions">
+        <a class="button button--primary" href="{{ '/guide/quick-start/' | relative_url }}">10분 Quick Start</a>
+        <a class="button button--secondary" href="{{ '/guide/sample/' | relative_url }}">SAMPLE 알아보기</a>
+      </div>
+    </div>
+    <div class="home-hero__art" aria-hidden="true">
+      <div class="koala-halo"></div>
+      <img src="{{ '/assets/images/justkoala.svg' | relative_url }}" alt="">
+    </div>
+  </section>
+
+  <div class="home-content">
+    {{ content }}
+  </div>
+</main>

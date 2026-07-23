@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1b1c20">
+    <title>{{ page.title | default: site.title | escape }}</title>
+    <meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | escape }}">
+    <meta name="author" content="{{ site.guide_creator.name | escape }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
+    <meta property="og:description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | escape }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:image" content="{{ '/assets/og-v2.png' | absolute_url }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/v2.css' | relative_url }}">
+  </head>
+  <body class="{{ page.body_class | default: 'guide-site' }}">
+    <a class="skip-link" href="#main-content">본문으로 바로가기</a>
+    {% include v2/header.html %}
+    {{ content }}
+    {% include v2/footer.html %}
+    <script>
+      (() => {
+        const button = document.querySelector('[data-menu-toggle]');
+        const menu = document.querySelector('[data-mobile-menu]');
+        if (button && menu) {
+          button.addEventListener('click', () => {
+            const open = button.getAttribute('aria-expanded') === 'true';
+            button.setAttribute('aria-expanded', String(!open));
+            menu.hidden = open;
+          });
+        }
+
+        const deviceButtons = [...document.querySelectorAll('[data-device-option]')];
+        const deviceImages = [...document.querySelectorAll('[data-device-image]')];
+        if (!deviceButtons.length || !deviceImages.length) return;
+
+        const storageKey = 'koala-guide-device';
+        let savedDevice = 'phone';
+        try {
+          savedDevice = window.localStorage.getItem(storageKey) || 'phone';
+        } catch (error) {
+          savedDevice = 'phone';
+        }
+
+        const showDevice = (device) => {
+          const selected = device === 'tablet' ? 'tablet' : 'phone';
+
+          deviceButtons.forEach((deviceButton) => {
+            deviceButton.setAttribute(
+              'aria-pressed',
+              String(deviceButton.dataset.deviceOption === selected)
+            );
+          });
+
+          deviceImages.forEach((deviceImage) => {
+            const source = deviceImage.dataset[`${selected}Src`];
+            const alt = deviceImage.dataset[`${selected}Alt`];
+            if (source) deviceImage.src = source;
+            if (alt) deviceImage.alt = alt;
+          });
+
+          try {
+            window.localStorage.setItem(storageKey, selected);
+          } catch (error) {
+            // The switch still works when browser storage is unavailable.
+          }
+        };
+
+        deviceButtons.forEach((deviceButton) => {
+          deviceButton.addEventListener('click', () => {
+            showDevice(deviceButton.dataset.deviceOption);
+          });
+        });
+
+        showDevice(savedDevice);
+      })();
+    </script>
+  </body>
+</html>

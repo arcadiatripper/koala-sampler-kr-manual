@@ -1,0 +1,32 @@
+<header class="guide-header">
+  <div class="guide-header__inner">
+    <a class="guide-brand" href="{{ '/' | relative_url }}" aria-label="Koala Sampler 한국어 가이드 홈">
+      <img src="{{ '/assets/images/justkoala.svg' | relative_url }}" alt="">
+      <span>
+        <strong>KOALA SAMPLER</strong>
+        <small>한국어 가이드</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-guide-menu" data-menu-toggle>
+      <span>메뉴</span>
+      <span class="menu-toggle__lines" aria-hidden="true"></span>
+    </button>
+
+    <nav class="guide-header__nav" aria-label="주요 가이드">
+      <a href="{{ '/guide/quick-start/' | relative_url }}">START HERE</a>
+      <a href="{{ '/guide/sample/' | relative_url }}">SAMPLE</a>
+      <a href="{{ '/guide/reference/' | relative_url }}">REFERENCE</a>
+      <a href="{{ '/guide/search/' | relative_url }}">SEARCH</a>
+      <a href="https://manual.koalasampler.com/">공식 매뉴얼 ↗</a>
+    </nav>
+  </div>
+
+  <nav id="mobile-guide-menu" class="mobile-menu" aria-label="모바일 가이드" data-mobile-menu hidden>
+    <a href="{{ '/guide/quick-start/' | relative_url }}">10분 Quick Start</a>
+    <a href="{{ '/guide/sample/' | relative_url }}">SAMPLE 화면</a>
+    <a href="{{ '/guide/reference/' | relative_url }}">전체 기능 목록</a>
+    <a href="{{ '/guide/search/' | relative_url }}">기능 검색</a>
+    <a href="https://manual.koalasampler.com/">공식 매뉴얼 ↗</a>
+  </nav>
+</header>

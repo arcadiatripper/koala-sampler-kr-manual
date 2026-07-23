@@ -5,4 +5,4 @@ anchor: 42-monitoring-input
 
 <a id="42-monitoring-input"></a>
 
-## 4.2. 입력 monitoring (Monitoring Input)
+## 4.2. 입력 소리 듣기 (Monitoring Input)

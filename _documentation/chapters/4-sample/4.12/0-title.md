@@ -5,4 +5,4 @@ anchor: 412-mute-and-solo
 
 <a id="412-mute-and-solo"></a>
 
-## 4.12. mute와 solo (Mute and Solo)
+## 4.12. 음소거와 솔로 (Mute and Solo)

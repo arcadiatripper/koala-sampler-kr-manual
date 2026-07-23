@@ -3,4 +3,4 @@
 
 {% flexible_image link="sample-autochop-lazy-play.png" alt="Autochop lazy mode" %}
 
-LAZY 모드는 MPC 스타일 chopping을 사용할 때 씁니다. 샘플이 재생되는 동안 찹 marker를 배치합니다.
+`LAZY`는 샘플을 들으면서 원하는 순간에 직접 자르기 지점을 찍는 방식입니다.

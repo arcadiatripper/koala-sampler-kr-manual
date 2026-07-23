@@ -3,6 +3,6 @@
 
 {% flexible_image link="sequence-note-repeat-free.png" alt="Note repeat keyboard" %}
 
-노트 repeat 모드는 hi-hat이나 stab처럼 반복적인 rhythm content를 만들 때 좋습니다.
+Note Repeat 모드는 하이햇이나 스탭(stab)처럼 반복적인 리듬을 만들 때 유용합니다.
 
-SNAP이 켜져 있으면 노트 repeat가 템포 단위에 맞춰 시작되고, 꺼져 있으면 누르는 즉시 시작됩니다.
+`SNAP`이 켜져 있으면 Note Repeat가 곡의 박자에 맞춰 시작됩니다. 꺼져 있으면 패드를 누르는 즉시 시작됩니다.

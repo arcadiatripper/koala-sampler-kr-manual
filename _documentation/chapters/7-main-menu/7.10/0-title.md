@@ -7,4 +7,4 @@ anchor: 710-settings
 
 ## 7.10. 설정 (Settings)
 
-SETTINGS를 누르면 Koala의 general 설정 menu가 열립니다.
+`SETTINGS`를 누르면 Koala의 일반 설정 화면이 열립니다.

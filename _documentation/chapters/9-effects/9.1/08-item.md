@@ -1,4 +1,4 @@
 ---
 ---
 ### FILTER
-high pass / low pass resonant filter입니다. 가운데에서 위로 slide하면 high pass 필터, 아래로 slide하면 low pass filter가 적용됩니다.
+공명감이 있는 하이패스/로우패스 필터입니다. 가운데에서 위로 움직이면 저음이, 아래로 움직이면 고음이 줄어듭니다.

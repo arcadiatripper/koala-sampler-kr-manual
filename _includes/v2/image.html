@@ -1,0 +1,16 @@
+{% assign mobile_path = '/assets/images/' | append: include.src %}
+{% assign tablet_path = '/assets/images/tablet/' | append: include.src %}
+<figure class="guide-shot{% if include.compact %} guide-shot--compact{% endif %}">
+  <img
+    src="{{ mobile_path | relative_url }}"
+    alt="{{ include.alt }} — Phone 화면"
+    data-device-image
+    data-phone-src="{{ mobile_path | relative_url }}"
+    data-tablet-src="{{ tablet_path | relative_url }}"
+    data-phone-alt="{{ include.alt }} — Phone 화면"
+    data-tablet-alt="{{ include.alt }} — Tablet 화면"
+    loading="lazy"
+    decoding="async"
+  >
+  {% if include.caption %}<figcaption>{{ include.caption }}</figcaption>{% endif %}
+</figure>

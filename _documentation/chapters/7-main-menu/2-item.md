@@ -9,4 +9,4 @@ anchor: 72-load-song
 
 {% flexible_image link="menu-load-song.png" alt="Load song screen" %}
 
-MENU를 누른 뒤 LOAD를 누르면 파일 browser가 열립니다. 목록에서 곡을 탭하면 불러옵니다. 다른 위치, 예를 들어 iCloud에서 곡을 추가하려면 IMPORT SONG을 누릅니다. SORT dropdown을 누르면 곡 정렬 방식을 바꿀 수 있습니다.
+MENU를 누른 뒤 LOAD를 누르면 파일 탐색기가 열립니다. 목록에서 곡을 탭하면 불러옵니다. 다른 위치, 예를 들어 iCloud에서 곡을 추가하려면 IMPORT SONG을 누릅니다. SORT 드롭다운을 누르면 곡 정렬 방식을 바꿀 수 있습니다.

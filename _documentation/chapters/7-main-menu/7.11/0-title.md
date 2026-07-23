@@ -7,4 +7,4 @@ anchor: 711-help
 
 ## 7.11. 도움말 (Help)
 
-Help는 기본 브라우저에서 Koala의 공식 help page 링크를 엽니다.
+`HELP`를 누르면 기본 웹 브라우저에서 Koala 공식 도움말이 열립니다.

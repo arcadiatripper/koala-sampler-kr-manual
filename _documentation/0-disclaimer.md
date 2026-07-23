@@ -10,4 +10,4 @@ order: 0
 
 2. 모든 기능이 모든 플랫폼에서 제공되는 것은 아닙니다. 공식 매뉴얼은 플랫폼별 차이를 표시하려고 하지만, 특정 기능 지원 여부를 확실히 확인해야 한다면 앱스토어/플레이스토어의 앱 설명을 확인하세요. 매뉴얼만 기준으로 판단하지 않는 것이 좋습니다. 이 점을 알려 준 Anthony Harbort에게 감사드립니다.
 
-3. 공식 매뉴얼에서 문제를 발견했다면 <https://www.koalasampler.com/contact>로 연락할 수 있습니다. 공식 매뉴얼은 오픈 소스이므로 직접 수정하고 싶다면 <https://www.github.com/elf-audio/koala-documentation>에서 pull request를 보낼 수 있습니다.
+3. 공식 매뉴얼에서 문제를 발견했다면 <https://www.koalasampler.com/contact>로 연락할 수 있습니다. 공식 매뉴얼은 오픈 소스이므로 직접 수정하고 싶다면 <https://www.github.com/elf-audio/koala-documentation>에서 수정 제안을 보낼 수 있습니다.

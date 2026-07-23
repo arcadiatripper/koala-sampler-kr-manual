@@ -3,4 +3,4 @@
 
 {% flexible_image link="settings-midi-mapping.png" alt="MIDI settings" %}
 
-**Enable MIDI 벨로시티:** 벨로시티 sensitive MIDI controller를 사용할 때, 켜져 있으면 연주 세기에 맞는 velocity가 Koala grid에 기록됩니다.
+**Enable MIDI velocity:** 연주 세기를 감지하는 MIDI 컨트롤러를 사용할 때, 누른 세기가 Koala 그리드에 함께 기록됩니다.

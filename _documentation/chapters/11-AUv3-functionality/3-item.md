@@ -9,6 +9,6 @@ anchor: 113-multi-bus-auv3-mode
 
 {% flexible_image link="auv3-multibus.png" alt="AUv3 Multi-bus mode" %}
 
-Koala를 AUv3 plugin으로 불러오면 추가 8개 출력 source를 사용할 수 있습니다.
+Koala를 AUv3 플러그인으로 불러오면 패드 소리를 최대 8개의 추가 출력으로 나눌 수 있습니다.
 
-참고: 멀티 버스 기능을 지원하는 AUv3 host에서만 추가 출력 destination을 사용할 수 있습니다. 현재는 AUM만 멀티 버스 format을 지원합니다.
+참고: 추가 출력은 멀티 버스를 지원하는 AUv3 호스트에서만 사용할 수 있습니다. 공식 매뉴얼은 현재 AUM을 지원 호스트로 안내합니다.

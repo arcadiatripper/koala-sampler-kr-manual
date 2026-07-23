@@ -9,6 +9,6 @@ anchor: 73-save-and-save-as
 
 {% flexible_image link="menu-save-as.png" alt="Save as dialog" %}
 
-MENU를 누른 뒤 SAVE를 누르면 곡이 즉시 저장됩니다. iOS 기기에서는 변경할 때마다 곡이 background에서 계속 저장됩니다. Koala를 시작하면 마지막으로 작업하던 곡 상태가 자동으로 불러와집니다.
+`MENU`에서 `SAVE`를 누르면 곡이 즉시 저장됩니다. iOS에서는 작업 내용이 백그라운드에서도 자동으로 저장되며, Koala를 다시 열면 마지막 상태가 복원됩니다.
 
-MENU를 누른 뒤 SAVE AS를 누르면 현재 곡을 새 파일로 저장합니다. modal window가 열리고 곡의 새 이름을 입력하라는 안내가 표시됩니다.
+`MENU`에서 `SAVE AS`를 누르면 현재 곡을 새 이름의 파일로 저장할 수 있습니다.

@@ -3,7 +3,7 @@
 {% flexible_image link="effect-phaser.png" alt="Phaser effect" %}
 
 ### PHASER
-Phaser effect입니다.
+Phaser 이펙트입니다.
 
 * RATE: 0-10 Hz
 * DEPTH: 0-100%

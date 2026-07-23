@@ -1,4 +1,4 @@
 ---
 ---
 ### RING
-Ring modulation입니다. 위로 slide할수록 modulation이 빨라집니다.
+링 모듈레이션 이펙트입니다. 손가락을 위로 움직일수록 변조 속도가 빨라집니다.

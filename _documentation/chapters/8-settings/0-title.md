@@ -3,4 +3,4 @@
 
 {% flexible_image link="menu-settings.png" alt="Settings menu option" %}
 
-Koala의 settings는 GENERAL, AUDIO, MIDI, EXTRAS 네 그룹으로 나뉩니다. 대부분의 설정 제목 옆에는 작은 question mark icon이 있습니다. 그것을 누르면 해당 옵션이 무엇을 하는지 짧은 설명을 볼 수 있습니다. 아래쪽 ABOUT 버튼을 누르면 Koala 소개 웹사이트가 열립니다. OK를 누르면 설정 window가 닫힙니다.
+Koala의 설정은 `GENERAL`, `AUDIO`, `MIDI`, `EXTRAS` 네 그룹으로 나뉩니다. 설정 이름 옆의 물음표 아이콘을 누르면 해당 기능에 대한 짧은 설명을 볼 수 있습니다. 아래쪽의 `ABOUT`은 Koala 소개 웹사이트를 열고, `OK`는 설정 화면을 닫습니다.
