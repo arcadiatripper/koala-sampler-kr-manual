@@ -8,8 +8,8 @@ summary: 이 사이트는 공식 매뉴얼을 바탕으로 만든 비공식 한�
 verified_date: 2026-07-23
 official_source: https://manual.koalasampler.com/mobile/0-disclaimer/
 source_order: 0
-previous_url: /guide/glossary/
-previous_title: 초보자 용어집
+previous_url: /guide/how-it-was-made/
+previous_title: 부록 — Koala는 어떻게 만들어졌나
 next_url: /guide/reference/
 next_title: 전체 기능 목록
 ---

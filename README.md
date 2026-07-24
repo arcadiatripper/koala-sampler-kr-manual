@@ -2,7 +2,7 @@
 
 이 프로젝트는 [Koala Sampler 공식 매뉴얼](https://manual.koalasampler.com/)을 바탕으로 만든 비공식 한국어 번역 초안입니다. 원본 문서 구조는 [elf-audio/koala-documentation](https://github.com/elf-audio/koala-documentation)의 Jekyll 사이트를 최대한 유지했습니다.
 
-이 저장소는 공식 Koala Sampler/Elf Audio 프로젝트가 아니며, 공식 제휴나 승인을 주장하지 않습니다. 원문 저작권과 공식 정보는 Elf Audio / Koala Sampler 측에 있습니다. 최신 정보는 반드시 공식 매뉴얼과 앱 안의 안내를 확인하세요.
+이 저장소는 공식 Koala Sampler/elf audio 프로젝트가 아니며, 공식 제휴나 승인을 주장하지 않습니다. 원문 저작권과 공식 정보는 elf audio / Koala Sampler 측에 있습니다. 최신 정보는 반드시 공식 매뉴얼과 앱 안의 안내를 확인하세요.
 
 ## 이 프로젝트의 목적
 

@@ -48,6 +48,12 @@
     - title: 처음 보는 단어 찾기
       label: GLOSSARY
       url: /guide/glossary/
+    - title: 자주 묻는 질문과 문제 해결
+      label: FAQ
+      url: /guide/help/
+    - title: Koala는 어떻게 만들어졌나
+      label: APPENDIX
+      url: /guide/how-it-was-made/
     - title: 전체 기능 목록
       label: REFERENCE
       url: /guide/reference/

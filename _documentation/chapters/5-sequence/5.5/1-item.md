@@ -3,7 +3,7 @@
 
 {% flexible_image link="sequence-idle.png" alt="Sequence controls" %}
 
-KEYBOARD MODE [SAMURAI]: 한 패드를 반음 단위, 선택한 스케일 또는 노트 반복 방식으로 연주할 수 있습니다. `KEYBOARD`를 누른 뒤 이 모드로 연주할 패드를 선택하세요.
+KEYBOARD MODE: 한 패드를 반음 단위, 선택한 스케일 또는 노트 반복 방식으로 연주할 수 있습니다. `KEYBOARD`를 누른 뒤 이 모드로 연주할 패드를 선택하세요. 키보드 모드는 기본 기능입니다.
 
 UNDO: 이전 작업을 되돌립니다.
 

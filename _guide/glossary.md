@@ -10,8 +10,8 @@ official_source: https://manual.koalasampler.com/mobile/
 source_order: 13
 previous_url: /guide/specifications/
 previous_title: 사양과 지원 범위
-next_url: /guide/disclaimer/
-next_title: 안내와 면책
+next_url: /guide/help/
+next_title: 공식 도움말 찾아보기
 ---
 
 {% include v2/root-content.html order=page.source_order %}

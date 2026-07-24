@@ -5,7 +5,7 @@ module Jekyll
       [/\baudio interface\b/, '오디오 인터페이스'],
       [/\bsample rate\b/, '샘플레이트'],
       [/\bkeyboard mode\b/, '키보드 모드'],
-      [/\bpiano roll\b/, '피아노롤'],
+      [/\bpiano roll\b/, '피아노 롤'],
       [/\btime stretching\b/, '타임스트레치'],
       [/\blive effects\b/, '실시간 이펙트'],
       [/\bmixer effects\b/, '믹서 이펙트'],

@@ -22,5 +22,7 @@ previous_title: 안내와 면책
   <a class="reference-link" href="{{ '/guide/auv3/' | relative_url }}"><span class="ui-label">AUV3</span><strong>iOS 플러그인 사용</strong><span>악기, 이펙트와 멀티 버스</span></a>
   <a class="reference-link" href="{{ '/guide/specifications/' | relative_url }}"><span class="ui-label">SPECS</span><strong>사양과 지원 범위</strong><span>패드, 시퀀스와 플랫폼 차이</span></a>
   <a class="reference-link" href="{{ '/guide/glossary/' | relative_url }}"><span class="ui-label">GLOSSARY</span><strong>처음 보는 단어 찾기</strong><span>샘플러 용어를 쉬운 말로</span></a>
+  <a class="reference-link" href="{{ '/guide/help/' | relative_url }}"><span class="ui-label">FAQ</span><strong>자주 묻는 질문과 문제 해결</strong><span>설치, 결제와 공식 도움말 항목</span></a>
+  <a class="reference-link" href="{{ '/guide/how-it-was-made/' | relative_url }}"><span class="ui-label">APPENDIX</span><strong>Koala는 어떻게 만들어졌나</strong><span>철학, 영감과 개발 과정</span></a>
   <a class="reference-link" href="{{ '/guide/disclaimer/' | relative_url }}"><span class="ui-label">NOTICE</span><strong>안내와 면책</strong><span>비공식 번역과 최신성 안내</span></a>
 </div>
