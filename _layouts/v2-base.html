@@ -36,10 +36,69 @@
         const button = document.querySelector('[data-menu-toggle]');
         const menu = document.querySelector('[data-mobile-menu]');
         if (button && menu) {
+          const closeButtons = [...menu.querySelectorAll('[data-menu-close]')];
+          let previousMenuFocus = null;
+
+          const setMenuOpen = (open, { restoreFocus = true } = {}) => {
+            menu.hidden = !open;
+            button.setAttribute('aria-expanded', String(open));
+            document.body.classList.toggle('menu-open', open);
+
+            if (open) {
+              previousMenuFocus = document.activeElement;
+              window.requestAnimationFrame(() => {
+                (
+                  menu.querySelector('[aria-current="page"]')
+                  || menu.querySelector('a[href]')
+                )?.focus();
+              });
+            } else if (
+              restoreFocus
+              && previousMenuFocus
+              && typeof previousMenuFocus.focus === 'function'
+            ) {
+              previousMenuFocus.focus();
+            }
+          };
+
           button.addEventListener('click', () => {
-            const open = button.getAttribute('aria-expanded') === 'true';
-            button.setAttribute('aria-expanded', String(!open));
-            menu.hidden = open;
+            setMenuOpen(menu.hidden);
+          });
+
+          closeButtons.forEach((closeButton) => {
+            closeButton.addEventListener('click', () => {
+              setMenuOpen(false);
+            });
+          });
+
+          document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && !menu.hidden) {
+              event.preventDefault();
+              setMenuOpen(false);
+            }
+          });
+
+          menu.addEventListener('keydown', (event) => {
+            if (event.key !== 'Tab') return;
+
+            const focusable = [
+              ...menu.querySelectorAll(
+                'a[href], button:not([disabled]):not([tabindex="-1"])'
+              )
+            ].filter((element) => element.offsetParent !== null);
+
+            if (!focusable.length) return;
+
+            const first = focusable[0];
+            const last = focusable[focusable.length - 1];
+
+            if (event.shiftKey && document.activeElement === first) {
+              event.preventDefault();
+              last.focus();
+            } else if (!event.shiftKey && document.activeElement === last) {
+              event.preventDefault();
+              first.focus();
+            }
           });
         }
 

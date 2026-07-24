@@ -364,6 +364,7 @@
     if (menuButton && mobileMenu && !mobileMenu.hidden) {
       menuButton.setAttribute('aria-expanded', 'false');
       mobileMenu.hidden = true;
+      document.body.classList.remove('menu-open');
     }
 
     window.requestAnimationFrame(() => {

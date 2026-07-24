@@ -231,8 +231,12 @@ img {
 }
 
 .menu-toggle,
-.mobile-menu {
+.mobile-menu-layer {
   display: none;
+}
+
+body.menu-open {
+  overflow: hidden;
 }
 
 .home-hero {
@@ -1682,12 +1686,32 @@ a.path-card:hover {
 }
 
 @media (max-width: 900px) {
+  .guide-header__inner {
+    display: grid;
+    grid-template-columns: 42px minmax(0, 1fr) 42px;
+    gap: 12px;
+  }
+
+  .guide-brand {
+    grid-column: 2;
+    grid-row: 1;
+    min-width: 0;
+    justify-self: center;
+  }
+
+  .guide-brand > span {
+    display: none;
+  }
+
   .guide-header__nav {
     display: none;
   }
 
   .guide-header__actions {
+    grid-column: 3;
+    grid-row: 1;
     display: flex;
+    justify-self: end;
   }
 
   .header-search-button--mobile {
@@ -1700,12 +1724,13 @@ a.path-card:hover {
     border-radius: 8px;
     background: transparent;
     color: var(--text);
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 8px 11px;
-    font: inherit;
-    font-size: 0.82rem;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    justify-self: start;
+    cursor: pointer;
   }
 
   .menu-toggle__lines,
@@ -1736,41 +1761,98 @@ a.path-card:hover {
     top: 5px;
   }
 
+  .mobile-menu-layer:not([hidden]) {
+    position: fixed;
+    z-index: 80;
+    inset: var(--header-height) 0 0;
+    display: block;
+  }
+
+  .mobile-menu__backdrop {
+    position: absolute;
+    inset: 0;
+    padding: 0;
+    border: 0;
+    background: rgba(8, 9, 11, 0.72);
+    backdrop-filter: blur(3px);
+    cursor: pointer;
+    animation: mobile-menu-backdrop-in 0.18s ease-out;
+  }
+
   .mobile-menu {
-    padding: 14px 24px 22px;
-    border-top: 1px solid var(--line);
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 86vw;
+    max-width: 340px;
+    border-right: 1px solid var(--line-strong);
     background: var(--canvas);
+    box-shadow: 24px 0 60px rgba(0, 0, 0, 0.42);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    animation: mobile-menu-drawer-in 0.22s ease-out;
   }
 
-  .mobile-menu:not([hidden]) {
-    display: grid;
-    gap: 2px;
+  .mobile-menu__header {
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    padding: 18px 18px 16px;
+    border-bottom: 1px solid var(--line);
+    background: rgba(27, 28, 32, 0.97);
+    backdrop-filter: blur(16px);
   }
 
-  .mobile-menu a {
-    padding: 11px 0;
+  .mobile-menu__header > div {
     display: grid;
     gap: 3px;
-    color: var(--muted-strong);
+  }
+
+  .mobile-menu__header span {
+    color: var(--brand);
+    font-family: var(--font-brand);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.11em;
+  }
+
+  .mobile-menu__header strong {
+    color: var(--text);
+    font-size: 1rem;
+  }
+
+  .mobile-menu nav {
+    padding: 24px 18px 12px;
+  }
+
+  .mobile-menu .sidebar-group + .sidebar-group {
+    margin-top: 30px;
+  }
+
+  .mobile-menu .sidebar-group a {
+    padding: 9px 11px;
+  }
+
+  .mobile-menu__official {
+    margin: 18px;
+    padding: 16px 12px;
+    border-top: 1px solid var(--line);
+    display: grid;
+    gap: 4px;
+    color: var(--muted);
     text-decoration: none;
   }
 
-  .mobile-menu a strong {
-    color: var(--text);
-    font-family: var(--font-brand);
-    font-size: 0.92rem;
-    font-weight: 750;
-    letter-spacing: 0.045em;
-  }
-
-  .mobile-menu a small {
-    color: #91959e;
-    font-size: 0.76rem;
-    font-weight: 500;
-  }
-
-  .mobile-menu a:hover strong {
+  .mobile-menu__official span {
     color: var(--brand);
+    font-family: var(--font-brand);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+  }
+
+  .mobile-menu__official strong {
+    color: var(--text);
+    font-size: 0.88rem;
   }
 
   .home-hero {
@@ -2035,11 +2117,36 @@ a.path-card:hover {
     scroll-behavior: auto;
   }
 
+  .mobile-menu,
+  .mobile-menu__backdrop {
+    animation: none;
+  }
+
   .path-card {
     transition: none;
   }
 
   .home-link-card {
     transition: none;
+  }
+}
+
+@keyframes mobile-menu-drawer-in {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes mobile-menu-backdrop-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }

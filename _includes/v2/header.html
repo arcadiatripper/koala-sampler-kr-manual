@@ -1,5 +1,9 @@
 <header class="guide-header">
   <div class="guide-header__inner">
+    <button class="menu-toggle" type="button" aria-label="가이드 목차 열기" aria-expanded="false" aria-controls="mobile-guide-menu" data-menu-toggle>
+      <span class="menu-toggle__lines" aria-hidden="true"></span>
+    </button>
+
     <a class="guide-brand" href="{{ '/' | relative_url }}" aria-label="Koala Sampler 한국어 가이드 홈">
       <img src="{{ '/favicon.svg' | relative_url }}" alt="">
       <span>
@@ -40,29 +44,43 @@
           <path d="m16 16 4.25 4.25"></path>
         </svg>
       </button>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-guide-menu" data-menu-toggle>
-        <span>메뉴</span>
-        <span class="menu-toggle__lines" aria-hidden="true"></span>
-      </button>
     </div>
   </div>
 
-  <nav id="mobile-guide-menu" class="mobile-menu" aria-label="모바일 가이드" data-mobile-menu hidden>
-    <a href="{{ '/guide/quick-start/' | relative_url }}">
-      <strong>QUICK GUIDE</strong>
-      <small>10분 만에 시작해보기</small>
-    </a>
-    <a href="{{ '/guide/overview/' | relative_url }}">
-      <strong>MANUAL</strong>
-      <small>매뉴얼</small>
-    </a>
-    <a href="{{ '/guide/help/' | relative_url }}">
-      <strong>FAQ</strong>
-      <small>자주 묻는 질문</small>
-    </a>
-    <a href="https://manual.koalasampler.com/">
-      <strong>OFFICIAL MANUAL ↗</strong>
-      <small>영문 공식 매뉴얼</small>
-    </a>
-  </nav>
 </header>
+
+<div id="mobile-guide-menu" class="mobile-menu-layer" data-mobile-menu hidden>
+  <button class="mobile-menu__backdrop" type="button" aria-label="메뉴 닫기" data-menu-close tabindex="-1"></button>
+  <aside class="mobile-menu" role="dialog" aria-modal="true" aria-labelledby="mobile-menu-title">
+    <header class="mobile-menu__header">
+      <div>
+        <span>GUIDE MENU</span>
+        <strong id="mobile-menu-title">가이드 목차</strong>
+      </div>
+    </header>
+
+    <nav aria-label="모바일 가이드 목차">
+      {% for group in site.data.guide_nav %}
+        <section class="sidebar-group">
+          <h2>{{ group.label }}</h2>
+          <ul>
+            {% for item in group.items %}
+              {% assign resolved_url = item.url | relative_url %}
+              <li>
+                <a href="{{ resolved_url }}" {% if page.url == item.url %}aria-current="page"{% endif %}>
+                  <span>{{ item.label }}</span>
+                  <strong>{{ item.title }}</strong>
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </section>
+      {% endfor %}
+    </nav>
+
+    <a class="mobile-menu__official" href="https://manual.koalasampler.com/">
+      <span>OFFICIAL MANUAL ↗</span>
+      <strong>영문 공식 매뉴얼</strong>
+    </a>
+  </aside>
+</div>
