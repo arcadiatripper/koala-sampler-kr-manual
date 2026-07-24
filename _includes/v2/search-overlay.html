@@ -1,0 +1,29 @@
+<div id="guide-search-overlay" class="search-overlay" data-search-overlay data-search-index-url="{{ '/assets/guide-index.json' | relative_url }}?v={{ site.time | date: '%s' }}" hidden>
+  <div class="search-overlay__backdrop" data-search-close aria-hidden="true"></div>
+  <section class="search-panel" role="dialog" aria-modal="true" aria-labelledby="guide-search-title">
+    <header class="search-panel__header">
+      <div>
+        <span class="ui-label">SEARCH</span>
+        <h2 id="guide-search-title">가이드 검색</h2>
+      </div>
+      <button class="search-panel__close" type="button" aria-label="검색 닫기" data-search-close>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6 6l12 12M18 6 6 18"></path>
+        </svg>
+      </button>
+    </header>
+
+    <form class="search-panel__form" role="search" data-global-search-form>
+      <label class="visually-hidden" for="global-guide-search">기능 또는 버튼 이름 검색</label>
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="11" cy="11" r="6.5"></circle>
+        <path d="m16 16 4.25 4.25"></path>
+      </svg>
+      <input id="global-guide-search" name="q" type="search" autocomplete="off" placeholder="예: QUANTIZE, 저장, 리샘플" data-global-search-input>
+    </form>
+
+    <div class="search-panel__results" aria-live="polite" data-global-search-results>
+      <p>앱에 표시되는 영어 버튼 이름이나 궁금한 한국어 기능을 입력하세요.</p>
+    </div>
+  </section>
+</div>

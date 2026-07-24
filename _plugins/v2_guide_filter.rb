@@ -117,8 +117,22 @@ module Jekyll
       '12-specifications' => 'specifications'
     }.freeze
 
+    def addon_badges(input)
+      baseurl = @context.registers[:site].config['baseurl'].to_s
+
+      input.to_s
+        .gsub(
+          '[SAMURAI]',
+          "<a class=\"addon-badge addon-badge--samurai\" href=\"#{baseurl}/guide/purchases/#101-samurai\" aria-label=\"SAMURAI 추가 기능 설명 보기\" title=\"SAMURAI 추가 기능 필요\">SAMURAI</a>"
+        )
+        .gsub(
+          '[MIXER]',
+          "<a class=\"addon-badge addon-badge--mixer\" href=\"#{baseurl}/guide/purchases/#102-mixer\" aria-label=\"MIXER 추가 기능 설명 보기\" title=\"MIXER 추가 기능 필요\">MIXER</a>"
+        )
+    end
+
     def v2_normalize_guide(input)
-      normalized = input.to_s
+      normalized = addon_badges(input)
 
       baseurl = @context.registers[:site].config['baseurl'].to_s
 
@@ -138,10 +152,6 @@ module Jekyll
         .gsub(
           %r{<p>참고:\s*(.*?)</p>}m,
           '<aside class="guide-note"><strong class="note-heading"><span aria-hidden="true">🔎</span> 알아두기</strong><p>\1</p></aside>'
-        )
-        .gsub(
-          '[SAMURAI]',
-          '<span class="addon-badge" aria-label="SAMURAI 추가 기능 필요" title="SAMURAI 추가 기능 필요">SAMURAI</span>'
         )
 
       normalized = normalized.gsub(

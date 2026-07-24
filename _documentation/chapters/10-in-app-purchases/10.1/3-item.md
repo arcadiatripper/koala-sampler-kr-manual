@@ -1,7 +1,7 @@
 ---
 ---
 
-### 10.1.3. 오토찹(Autochop)
+### 10.1.3. 오토찹(Autochop) [SAMURAI]
 
 {% flexible_image link="sample-autochop-equal.png" alt="Autochop" %}
 

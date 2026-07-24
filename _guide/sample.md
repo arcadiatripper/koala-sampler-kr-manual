@@ -5,7 +5,7 @@ ui_label: SAMPLE
 reading_time: 약 12분
 level: 기본 기능
 summary: SAMPLE은 음악에 사용할 소리를 준비하는 화면입니다. 녹음하거나 불러온 소리를 패드에 담고, 필요한 구간만 남겨 다듬습니다.
-verified_date: 2026-07-23
+verified_date: 2026-07-24
 official_source: https://manual.koalasampler.com/mobile/4-sample/
 source_chapters:
   - 4-sample
@@ -103,12 +103,13 @@ SAMPLE 화면은 소리 재료를 준비하는 작업대입니다. 처음에는 
 
 다음 기능은 필요할 때 천천히 배워도 됩니다.
 
-- `AUTO-CHOP`: 긴 소리를 여러 조각으로 나누기
-- `STRETCH`: 소리 길이를 곡의 BPM에 맞추기
+- `AUTO-CHOP` {% include v2/addon-badge.html addon="SAMURAI" %}: 긴 소리를 여러 조각으로 나누기
+- `STRETCH` {% include v2/addon-badge.html addon="SAMURAI" %}: 소리 길이를 곡의 BPM에 맞추기
 - `SPLIT STEMS`: 완성된 곡을 드럼, 보컬, 베이스 등으로 나누기
-- `MIX / EQ`: 소리의 저음, 중음, 고음 다듬기
+- `MIX / EQ` {% include v2/addon-badge.html addon="SAMURAI" %}: 패드별 저음, 중음, 고음 다듬기
+- `BUS A–D` {% include v2/addon-badge.html addon="MIXER" %}: 패드를 믹서 버스 채널로 보내기
 
-일부 기능은 `SAMURAI` 또는 `MIXER` 추가 구매가 필요할 수 있습니다. 앱의 구매 화면과 공식 설명을 함께 확인하세요.
+{% include v2/addon-badge.html addon="SAMURAI" %} 또는 {% include v2/addon-badge.html addon="MIXER" %} 배지가 붙은 기능은 해당 추가 기능을 구매해야 사용할 수 있습니다.
 
 <section class="reference-intro">
   <h2>SAMPLE 전체 기능</h2>

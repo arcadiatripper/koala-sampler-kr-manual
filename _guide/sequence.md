@@ -5,7 +5,7 @@ ui_label: SEQUENCE
 reading_time: 약 20분
 level: 기본·심화
 summary: SEQUENCE는 패드를 누른 타이밍을 기억하는 화면입니다. 먼저 실시간 녹음을 익히고, 필요할 때 그리드 편집으로 넘어가세요.
-verified_date: 2026-07-23
+verified_date: 2026-07-24
 official_source: https://manual.koalasampler.com/mobile/5-sequence/
 source_chapters:
   - 5-sequence

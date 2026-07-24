@@ -1,0 +1,49 @@
+---
+---
+[
+  {% assign first_search_item = true %}
+  {% for guide in site.guide %}
+    {% unless first_search_item %},{% endunless %}
+    {% assign first_search_item = false %}
+    {% capture guide_content %}{{ guide.content }}{% endcapture %}
+    {
+      "type": "page",
+      "title": {{ guide.title | jsonify }},
+      "label": {{ guide.ui_label | default: "" | jsonify }},
+      "summary": {{ guide.summary | default: guide.description | default: "" | jsonify }},
+      "content": {{ guide_content | addon_badges | strip_html | strip_newlines | normalize_whitespace | jsonify }},
+      "url": {{ guide.url | relative_url | jsonify }}
+    }
+    {% for chapter_name in guide.source_chapters %}
+      {% for document in site.documentation %}
+        {% if document.path contains chapter_name and document.anchor %}
+          {% capture section_content %}
+            {{ document.content }}
+            {% if document.path contains '/0-title.md' %}
+              {% assign section_path_parts = document.path | split: '/' %}
+              {% assign section_directory_parts = section_path_parts | pop %}
+              {% assign section_directory = section_directory_parts | join: '/' %}
+              {% capture section_prefix %}{{ section_directory }}/{% endcapture %}
+              {% for related_document in site.documentation %}
+                {% if related_document.path contains section_prefix and related_document.path != document.path %}
+                  {{ related_document.content }}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          {% endcapture %}
+          {% assign clean_section_content = section_content | v2_normalize_guide | strip_html | strip_newlines | normalize_whitespace %}
+          {% assign section_heading_chunk = section_content | split: '</h2>' | first %}
+          {% capture section_url %}{{ guide.url | relative_url }}#{{ document.anchor }}{% endcapture %}
+          ,{
+            "type": "section",
+            "title": {{ section_heading_chunk | strip_html | strip_newlines | normalize_whitespace | jsonify }},
+            "label": {{ guide.ui_label | default: "" | jsonify }},
+            "summary": {{ clean_section_content | truncate: 220 | jsonify }},
+            "content": {{ clean_section_content | jsonify }},
+            "url": {{ section_url | strip | jsonify }}
+          }
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  {% endfor %}
+]

@@ -3,7 +3,7 @@
 
 {% flexible_image link="mixer.png" alt="mixer with effects" %}
 
-유료 인앱 구매로 제공되는 Koala의 믹서는 4개의 버스(bus)와 마스터 채널(master channel)을 추가합니다. 각 채널에는 사이드체인 이펙트(sidechain effect)를 포함해 5개의 이펙트 슬롯이 있습니다.
+유료 인앱 구매로 제공되는 Koala의 믹서 [MIXER]는 4개의 버스(bus)와 마스터 채널(master channel)을 추가합니다. 각 채널에는 사이드체인 이펙트(sidechain effect)를 포함해 5개의 이펙트 슬롯이 있습니다.
 
 Koala에서 리샘플링할 때는 실시간 이펙트를 적용하거나, 채널 이펙트가 적용된 시퀀스를 다시 샘플로 녹음할 수 있습니다.
 

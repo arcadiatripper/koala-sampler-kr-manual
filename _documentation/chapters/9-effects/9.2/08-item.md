@@ -2,7 +2,7 @@
 ---
 {% flexible_image link="effect-filter.png" alt="Filter effect" %}
 
-### FILTER
+### FILTER [MIXER]
 여러 필터 방식과 자동 변조 기능을 제공하는 필터입니다.
 
 * FILTER TYPE: Lo-pass, Hi-pass, Talkbox, Wah Wah

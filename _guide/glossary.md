@@ -5,7 +5,7 @@ ui_label: GLOSSARY
 reading_time: 약 10분
 level: 입문 참고
 summary: 앱에서 찾을 이름은 영어로 유지하고, 그 뜻은 짧고 쉬운 한국어로 설명합니다.
-verified_date: 2026-07-23
+verified_date: 2026-07-24
 official_source: https://manual.koalasampler.com/mobile/
 source_order: 13
 previous_url: /guide/specifications/

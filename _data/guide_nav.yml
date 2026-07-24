@@ -9,9 +9,6 @@
     - title: 네 화면의 역할
       label: OVERVIEW
       url: /guide/overview/
-    - title: 기능 검색
-      label: SEARCH
-      url: /guide/search/
 - label: 화면별 가이드
   items:
     - title: 소리 넣고 다듬기
@@ -54,6 +51,6 @@
     - title: Koala는 어떻게 만들어졌나
       label: APPENDIX
       url: /guide/how-it-was-made/
-    - title: 전체 기능 목록
-      label: REFERENCE
-      url: /guide/reference/
+    - title: 안내와 면책
+      label: NOTICE
+      url: /guide/disclaimer/

@@ -1,7 +1,7 @@
 ---
 ---
 
-### 10.1.1. 타임스트레치(Timestretch)
+### 10.1.1. 타임스트레치(Timestretch) [SAMURAI]
 
 {% flexible_image link="sample-timestretch-menu.png" alt="Timestretch" %}
 

@@ -1,0 +1,10 @@
+{%- assign addon_name = include.addon | upcase -%}
+{%- if addon_name == "MIXER" -%}
+  {%- assign addon_class = "mixer" -%}
+  {%- assign addon_anchor = "102-mixer" -%}
+{%- else -%}
+  {%- assign addon_name = "SAMURAI" -%}
+  {%- assign addon_class = "samurai" -%}
+  {%- assign addon_anchor = "101-samurai" -%}
+{%- endif -%}
+<a class="addon-badge addon-badge--{{ addon_class }}" href="{{ '/guide/purchases/' | relative_url }}#{{ addon_anchor }}" aria-label="{{ addon_name }} 추가 기능 설명 보기" title="{{ addon_name }} 추가 기능 필요">{{ addon_name }}</a>

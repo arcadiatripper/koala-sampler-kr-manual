@@ -456,4 +456,48 @@ input[type="text"] {
     margin: 0.5em;
 }
 
-    
+.addon-badge {
+    position: relative;
+    top: -0.04em;
+    min-height: 20px;
+    margin: 0 0.18em;
+    padding: 1px 7px 2px;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    font-family: "Dosis", sans-serif;
+    font-size: 0.67rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    line-height: 1;
+    text-decoration: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.addon-badge--samurai {
+    border-color: rgba(239, 194, 104, 0.56);
+    background: rgba(239, 194, 104, 0.13);
+    color: #efd08e;
+}
+
+.addon-badge--mixer {
+    border-color: rgba(103, 165, 247, 0.58);
+    background: rgba(103, 165, 247, 0.13);
+    color: #a9ceff;
+}
+
+@media (hover:hover) {
+    .addon-badge--samurai:hover {
+        border-color: #efc268;
+        background: rgba(239, 194, 104, 0.2);
+        color: #f6d99c;
+    }
+
+    .addon-badge--mixer:hover {
+        border-color: #67a5f7;
+        background: rgba(103, 165, 247, 0.2);
+        color: #c2ddff;
+    }
+}

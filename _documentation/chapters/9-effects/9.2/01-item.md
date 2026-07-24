@@ -2,7 +2,7 @@
 ---
 {% flexible_image link="effect-auto-pan.png" alt="Auto pan effect" %}
 
-### AUTOPAN
+### AUTOPAN [MIXER]
 다양하게 사용할 수 있는 팬 이펙트입니다.
 
 * DEPTH: 0.00-100%

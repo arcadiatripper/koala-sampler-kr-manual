@@ -5,7 +5,7 @@ ui_label: SETTINGS
 reading_time: 약 15분
 level: 필요할 때
 summary: 처음에는 기본 설정을 유지해도 됩니다. 소리 입출력, MIDI 연결, 화면 표시처럼 분명한 목적이 생겼을 때 해당 항목만 바꾸세요.
-verified_date: 2026-07-23
+verified_date: 2026-07-24
 official_source: https://manual.koalasampler.com/mobile/8-settings/
 source_chapters:
   - 8-settings

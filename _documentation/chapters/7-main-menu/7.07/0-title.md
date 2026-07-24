@@ -14,4 +14,4 @@ anchor: 77-export-options
 * SHARE KOALA SONG: .koala 곡 파일을 만들어 다른 기기나 사람과 공유합니다.
 * ABLETON DRUM RACK: 모든 패드가 담긴 Ableton Drum Rack .adg 파일을 만듭니다.
 * ABLETON LIVE SET: Ableton Live에서 이어서 작업할 수 있는 루프나 개별 시퀀스 스템을 만듭니다.
-* GET ABLETON LIVE LITE: 이메일 주소를 입력해 무료 Ableton Live Lite 버전을 받을 수 있는 확인 창을 엽니다.
+* GET ABLETON LIVE LITE: iOS에서 이메일 주소를 입력해 무료 Ableton Live Lite 버전을 받을 수 있는 확인 창을 엽니다. Android에서는 지원되지 않습니다.

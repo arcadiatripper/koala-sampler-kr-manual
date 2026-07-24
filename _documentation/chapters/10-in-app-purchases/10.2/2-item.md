@@ -1,6 +1,8 @@
 ---
 ---
 
+### 10.2.2. 패드 버스 라우팅 [MIXER]
+
 {% flexible_image link="sample-editor-mix-output-dropdown.png" alt="Send busses" %}
 
 패드를 믹서의 4개 채널로 보내 세밀하게 믹스하고, 채널마다 최대 5개의 이펙트로 처리할 수 있습니다.

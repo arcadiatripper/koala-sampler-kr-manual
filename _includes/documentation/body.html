@@ -29,7 +29,7 @@
   <div class="w-100"></div>
   <div class="col-md-6">
 
-    {{ chapter_part.content | liquify | markdownify | replace: 'href="/assets/', 'href="/koala-sampler-kr-manual/assets/' | replace: 'src="/assets/', 'src="/koala-sampler-kr-manual/assets/' }}
+    {{ chapter_part.content | liquify | markdownify | addon_badges | replace: 'href="/assets/', 'href="/koala-sampler-kr-manual/assets/' | replace: 'src="/assets/', 'src="/koala-sampler-kr-manual/assets/' }}
 
   </div>
   <div class="w-100"></div>
@@ -44,7 +44,7 @@
 
   <div class="col-md-6 {{ chapter_column_class }} mb-40 ">
 
-    {{ chapter_part.content | liquify | markdownify | replace: 'href="/assets/', 'href="/koala-sampler-kr-manual/assets/' | replace: 'src="/assets/', 'src="/koala-sampler-kr-manual/assets/' }}
+    {{ chapter_part.content | liquify | markdownify | addon_badges | replace: 'href="/assets/', 'href="/koala-sampler-kr-manual/assets/' | replace: 'src="/assets/', 'src="/koala-sampler-kr-manual/assets/' }}
 
   </div>
 

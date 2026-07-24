@@ -65,7 +65,7 @@
 			<h2 id="{{ chapter_path_component }}">
 				{{chapter.order}}. {{ chapter.title }}
 			</h2>
-			{{ chapter.content | replace: 'href="/assets/', 'href="/koala-sampler-kr-manual/assets/' | replace: 'src="/assets/', 'src="/koala-sampler-kr-manual/assets/' }}
+			{{ chapter.content | addon_badges | replace: 'href="/assets/', 'href="/koala-sampler-kr-manual/assets/' | replace: 'src="/assets/', 'src="/koala-sampler-kr-manual/assets/' }}
 			
 				<!-- now search for that path component in any path that also has 'chapters'
 				and we've found the subchapters -->
@@ -73,7 +73,7 @@
 				{% unless subchapter.hidden == true %}
 					{% if subchapter.url contains 'chapters' and subchapter.url contains chapter_path_component  %}
 						<div class="subchapter" id="{{subchapter.url}}">
-							{{ subchapter.content | replace: 'href="/assets/', 'href="/koala-sampler-kr-manual/assets/' | replace: 'src="/assets/', 'src="/koala-sampler-kr-manual/assets/' }}
+							{{ subchapter.content | addon_badges | replace: 'href="/assets/', 'href="/koala-sampler-kr-manual/assets/' | replace: 'src="/assets/', 'src="/koala-sampler-kr-manual/assets/' }}
 						</div>
 					{% endif %}
 				{% endunless %}

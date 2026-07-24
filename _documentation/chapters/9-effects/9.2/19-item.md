@@ -2,7 +2,7 @@
 ---
 {% flexible_image link="effect-ring-mod.png" alt="Ring mod effect" %}
 
-### RING MOD
+### RING MOD [MIXER]
 금속성 질감을 만드는 링 모듈레이터입니다.
 
 * FREQ: 1.0 Hz to 8.00 kHz

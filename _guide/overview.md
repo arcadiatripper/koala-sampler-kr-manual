@@ -5,7 +5,7 @@ ui_label: OVERVIEW
 reading_time: 약 6분
 level: 처음 사용
 summary: Koala는 소리를 준비하고, 순서를 기록하고, 이펙트로 연주한 뒤 저장하는 네 단계로 이해하면 쉽습니다.
-verified_date: 2026-07-23
+verified_date: 2026-07-24
 official_source: https://manual.koalasampler.com/mobile/2-general-overview/
 source_chapters:
   - 1-introduction

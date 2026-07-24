@@ -2,7 +2,7 @@
 ---
 {% flexible_image link="effect-compressor.png" alt="Compressor" %}
 
-### COMPRESSOR
+### COMPRESSOR [MIXER]
 큰 소리와 작은 소리의 차이를 줄여 볼륨을 더 일정하게 만듭니다. 소리가 시작되는 타격감도 조절할 수 있습니다.
 
 * MAKEUP: on/off

@@ -14,7 +14,7 @@ layout: base
     </div>
   </div>
   <div class="documentation-content post-content">
-    {{ page.description }} {{ content }} {%- include documentation/body.html -%}
+    {{ page.description }} {{ content | addon_badges }} {%- include documentation/body.html -%}
   </div>
 </article>
 

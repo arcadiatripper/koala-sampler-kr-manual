@@ -5,8 +5,7 @@ anchor: 49-chopping-samples
 
 <a id="49-chopping-samples"></a>
 
-## 4.9. 샘플 자르기 (Chopping Samples)
-Auto-Chop은 유료 인앱 구매인 SAMURAI 모드에서 사용할 수 있습니다.
+## 4.9. 샘플 자르기 (Chopping Samples) [SAMURAI]
 
 Koala는 샘플을 여러 방식으로 자를 수 있습니다. `TOOLS` 메뉴에서 `AUTO-CHOP`을 누르면 자르기 화면이 열립니다.
 

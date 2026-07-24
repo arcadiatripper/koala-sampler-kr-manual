@@ -34,7 +34,7 @@ description: 앱의 영어 표시는 그대로 익히고, 사용법은 쉬운 �
       <p class="section-kicker">바로 찾기</p>
       <h2 id="home-find-title">막혔거나 궁금할 때</h2>
     </div>
-    <p>문제가 생겼다면 FAQ를, 기능의 위치를 훑고 싶다면 REFERENCE를, 이름을 알고 있다면 SEARCH를 이용하세요.</p>
+    <p>문제가 생겼다면 FAQ를 확인하세요. 기능 이름을 알고 있다면 어느 페이지에서든 우상단 돋보기로 바로 검색할 수 있습니다.</p>
   </div>
 
   <div class="home-link-grid home-link-grid--tools">
@@ -44,18 +44,12 @@ description: 앱의 영어 표시는 그대로 익히고, 사용법은 쉬운 �
       <p>설치, 결제, 오디오, MIDI와 플랫폼별 문제 해결 방법을 확인합니다.</p>
       <span class="home-link-card__action">FAQ 열기 →</span>
     </a>
-    <a class="home-link-card" href="{{ '/guide/reference/' | relative_url }}">
-      <span class="ui-label">REFERENCE</span>
-      <h3>전체 기능 목록</h3>
-      <p>화면, 설정, 이펙트, 확장 기능과 참고 페이지를 한곳에서 찾습니다.</p>
-      <span class="home-link-card__action">기능 목록 보기 →</span>
-    </a>
-    <a class="home-link-card" href="{{ '/guide/search/' | relative_url }}">
+    <button class="home-link-card home-link-card--button" type="button" aria-expanded="false" aria-controls="guide-search-overlay" data-search-open>
       <span class="ui-label">SEARCH</span>
       <h3>가이드 검색</h3>
-      <p>앱에서 본 영어 버튼 이름이나 궁금한 한국어 기능을 입력해 찾습니다.</p>
-      <span class="home-link-card__action">검색하기 →</span>
-    </a>
+      <p>페이지를 이동하지 않고 영어 버튼 이름이나 궁금한 한국어 기능을 바로 찾습니다.</p>
+      <span class="home-link-card__action">검색창 열기 →</span>
+    </button>
   </div>
 </section>
 

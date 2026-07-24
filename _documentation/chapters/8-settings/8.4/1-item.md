@@ -3,7 +3,7 @@
 
 {% flexible_image link="settings-extras.png" alt="Extras settings" %}
 
-* **Show EQ:** 샘플 편집기의 MIX 탭에서 EQ를 켜거나 끕니다. EQ 사용법은 [여기](../4-sample#48-mix-and-eq)에서 더 볼 수 있습니다.
+* **Show EQ [SAMURAI]:** 샘플 편집기의 MIX 탭에서 패드별 3밴드 EQ를 켜거나 끕니다. EQ 사용법은 [여기](../4-sample#48-mix-and-eq)에서 더 볼 수 있습니다.
 * **Show Mute/Solo:** SAMPLE과 SEQUENCE 화면의 Mute/Solo 버튼을 켜거나 끕니다. 음소거/솔로는 [여기](../4-sample#412-mute-and-solo)에서 더 볼 수 있습니다.
 * **Show file names on pads:** 파일 이름을 패드의 이름으로 표시합니다.
 * **Show debug info:** 파형 편집기에 시작점, 끝점, 길이와 픽셀당 샘플 수 같은 기술 정보를 표시합니다.

@@ -5,7 +5,7 @@ ui_label: FX
 reading_time: 약 25분
 level: 참고용
 summary: 이펙트 이름을 외우기보다 재생 중 하나씩 들어보세요. 원하는 변화가 생기면 그때 세부 컨트롤을 확인하면 됩니다.
-verified_date: 2026-07-23
+verified_date: 2026-07-24
 official_source: https://manual.koalasampler.com/mobile/9-effects/
 source_chapters:
   - 9-effects
@@ -18,7 +18,7 @@ next_title: 유료 확장 기능
 ## 어떤 목록을 봐야 할까요?
 
 - `PERFORM FX`: 손가락으로 즉시 조작하는 16개 실시간 이펙트
-- `MIXER EFFECTS`: 믹서 채널과 마스터에 넣는 이펙트
+- `MIXER EFFECTS` {% include v2/addon-badge.html addon="MIXER" %}: 믹서 채널과 마스터에 넣는 이펙트
 - `BACKGROUND EFFECTS`: 소리가 아니라 배경 이미지에 적용하는 시각 효과
 
 > **이름보다 소리를 먼저 들어보세요.**

@@ -1,17 +1,12 @@
 <header class="guide-header">
   <div class="guide-header__inner">
     <a class="guide-brand" href="{{ '/' | relative_url }}" aria-label="Koala Sampler 한국어 가이드 홈">
-      <img src="{{ '/assets/images/justkoala.svg' | relative_url }}" alt="">
+      <img src="{{ '/favicon.svg' | relative_url }}" alt="">
       <span>
         <strong>KOALA SAMPLER</strong>
         <small>한국어 가이드</small>
       </span>
     </a>
-
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-guide-menu" data-menu-toggle>
-      <span>메뉴</span>
-      <span class="menu-toggle__lines" aria-hidden="true"></span>
-    </button>
 
     <nav class="guide-header__nav" aria-label="주요 가이드">
       <a href="{{ '/guide/quick-start/' | relative_url }}">
@@ -26,19 +21,30 @@
         <strong>FAQ</strong>
         <small>자주 묻는 질문</small>
       </a>
-      <a href="{{ '/guide/reference/' | relative_url }}">
-        <strong>REFERENCE</strong>
-        <small>기능 목록</small>
-      </a>
-      <a href="{{ '/guide/search/' | relative_url }}">
-        <strong>SEARCH</strong>
-        <small>검색</small>
-      </a>
       <a href="https://manual.koalasampler.com/">
         <strong>OFFICIAL MANUAL ↗</strong>
         <small>영문 공식 매뉴얼</small>
       </a>
+      <button class="header-search-button header-search-button--desktop" type="button" aria-label="가이드 검색 열기" aria-expanded="false" aria-controls="guide-search-overlay" data-search-open>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="11" cy="11" r="6.5"></circle>
+          <path d="m16 16 4.25 4.25"></path>
+        </svg>
+      </button>
     </nav>
+
+    <div class="guide-header__actions">
+      <button class="header-search-button header-search-button--mobile" type="button" aria-label="가이드 검색 열기" aria-expanded="false" aria-controls="guide-search-overlay" data-search-open>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="11" cy="11" r="6.5"></circle>
+          <path d="m16 16 4.25 4.25"></path>
+        </svg>
+      </button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-guide-menu" data-menu-toggle>
+        <span>메뉴</span>
+        <span class="menu-toggle__lines" aria-hidden="true"></span>
+      </button>
+    </div>
   </div>
 
   <nav id="mobile-guide-menu" class="mobile-menu" aria-label="모바일 가이드" data-mobile-menu hidden>
@@ -53,14 +59,6 @@
     <a href="{{ '/guide/help/' | relative_url }}">
       <strong>FAQ</strong>
       <small>자주 묻는 질문</small>
-    </a>
-    <a href="{{ '/guide/reference/' | relative_url }}">
-      <strong>REFERENCE</strong>
-      <small>기능 목록</small>
-    </a>
-    <a href="{{ '/guide/search/' | relative_url }}">
-      <strong>SEARCH</strong>
-      <small>검색</small>
     </a>
     <a href="https://manual.koalasampler.com/">
       <strong>OFFICIAL MANUAL ↗</strong>

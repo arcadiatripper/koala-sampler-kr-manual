@@ -5,7 +5,7 @@ ui_label: PERFORM
 reading_time: 약 14분
 level: 기본·심화
 summary: PERFORM은 이미 만든 시퀀스를 곡처럼 연주하는 화면입니다. 손가락을 댄 동안 소리가 달라지는 실시간 FX부터 시작하세요.
-verified_date: 2026-07-23
+verified_date: 2026-07-24
 official_source: https://manual.koalasampler.com/mobile/6-perform/
 source_chapters:
   - 6-perform

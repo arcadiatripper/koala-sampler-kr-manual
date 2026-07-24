@@ -2,7 +2,7 @@
 ---
 {% flexible_image link="effect-tape-delay.png" alt="Tape delay effect" %}
 
-### TAPE DELAY
+### TAPE DELAY [MIXER]
 아날로그 테이프 루프처럼 조금씩 변하는 반복음을 만드는 딜레이입니다.
 
 * DELAY: 10.0 ms to 2.50 sec

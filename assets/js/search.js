@@ -35,7 +35,7 @@ const documents = [
       "id": {{ counter }},
       "title"    : "{{ chapter.title | escape }}",
       "url"      : "{{ url }}",
-      "content" : "{{chapter.content| newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | escape }}"
+      "content" : "{{ chapter.content | addon_badges | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | escape }}"
     } {% unless forloop.last %},{% endunless %}
 
     {% endunless %}

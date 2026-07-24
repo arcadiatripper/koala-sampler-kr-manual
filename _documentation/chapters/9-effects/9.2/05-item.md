@@ -2,7 +2,7 @@
 ---
 {% flexible_image link="effect-delay.png" alt="Delay effect" %}
 
-### DELAY
+### DELAY [MIXER]
 필터와 템포 동기화를 지원하는 딜레이입니다.
 
 * DELAY: 0.00000–2.50초 또는 1/64–8마디

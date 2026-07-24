@@ -27,8 +27,10 @@
   <body class="{{ page.body_class | default: 'guide-site' }}">
     <a class="skip-link" href="#main-content">본문으로 바로가기</a>
     {% include v2/header.html %}
+    {% include v2/search-overlay.html %}
     {{ content }}
     {% include v2/footer.html %}
+    <script src="{{ '/assets/js/v2-search.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
     <script>
       (() => {
         const button = document.querySelector('[data-menu-toggle]');

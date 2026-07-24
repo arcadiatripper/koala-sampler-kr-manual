@@ -3,8 +3,6 @@
 
 {% flexible_image link="sample-timestretch-applied.png" alt="Timestretch menu" %}
 
-STRETCH는 유료 인앱 구매 SAMURAI에서 사용할 수 있습니다. [자세히 보기](../10-in-app-purchases)
-
 `STRETCH`를 누르면 타임스트레치가 활성화됩니다. 선택 영역 위쪽에는 샘플이 차지할 마디 수가 표시되고, 재생 길이는 곡 템포에 맞춰집니다.
 
 > 💡 초보자 주석:
