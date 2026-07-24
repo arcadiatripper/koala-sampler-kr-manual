@@ -188,7 +188,7 @@ img {
 }
 
 .guide-header__actions {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 8px;
 }
@@ -1684,6 +1684,10 @@ a.path-card:hover {
 @media (max-width: 900px) {
   .guide-header__nav {
     display: none;
+  }
+
+  .guide-header__actions {
+    display: flex;
   }
 
   .header-search-button--mobile {
