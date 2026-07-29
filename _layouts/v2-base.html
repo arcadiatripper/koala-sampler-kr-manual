@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="ko-KR">
   <head>
+    {% include google-analytics.html %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#1b1c20">
@@ -23,7 +24,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/assets/css/v2.css' | relative_url }}">
-    {%- include google-analytics.html -%}
   </head>
   <body class="{{ page.body_class | default: 'guide-site' }}">
     <a class="skip-link" href="#main-content">본문으로 바로가기</a>
